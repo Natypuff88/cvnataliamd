@@ -1,0 +1,14 @@
+.icon-size{
+    font-size: 2rem;
+}
+
+hr{
+    border-top: 7px solid;
+    color: #fafafa;
+}
+
+.txt{
+    text-align: left;
+    padding: 0px !important;
+    margin: 0px 0px 0px 20px !important;
+}
