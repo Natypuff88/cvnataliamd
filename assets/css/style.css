@@ -12,3 +12,18 @@ hr{
     padding: 0px !important;
     margin: 0px 0px 0px 20px !important;
 }
+
+.bg-naty{
+    background-color: #F9CDD4;
+}
+
+.txt-naty{
+   color: #1B0907;
+}
+
+.box-skills{
+    background: #FAFAFA;
+    box-shadow: 0px 5px 20px rgba(245, 170, 182, 0.6);
+    border-radius: 24px;
+    height: 100%;
+}
