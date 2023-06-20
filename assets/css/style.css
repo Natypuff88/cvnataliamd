@@ -2,9 +2,13 @@
     font-size: 2rem;
 }
 
-hr{
-    border-top: 7px solid;
+.icon-size:hover{
     color: #fafafa;
+}
+
+hr{
+    border-top: 3px solid;
+    color: #645a5a;
 }
 
 .txt{
@@ -21,9 +25,47 @@ hr{
    color: #1B0907;
 }
 
+.txt-naty-2{
+    color: #1B0907;
+    font-size: 20px;
+ }
+
 .box-skills{
     background: #FAFAFA;
     box-shadow: 0px 5px 20px rgba(245, 170, 182, 0.6);
     border-radius: 24px;
     height: 100%;
+}
+
+.txt-herremientas{
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.txt-herremientas-2{
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+}
+
+.link-otros{
+    text-decoration: none;
+    font-size: 18px;
+    color: #1B0907;
+    text-align: left;
+    padding: 0px !important;
+    margin: 0px 0px 0px 20px !important;
+}
+
+.link-otros:hover{
+    text-decoration: underline;
+    font-size: 24px;
+    color: #fafafa;
+}
+
+li:link, li:visited, li:active li:hover{
+	text-decoration: none !important;
+	list-style-type: none !important;
 }
