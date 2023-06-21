@@ -87,3 +87,8 @@ li:link, li:visited, li:active li:hover{
 	text-decoration: none !important;
 	list-style-type: none !important;
 }
+
+ul {
+    list-style: none;
+  }
+  
