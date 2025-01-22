@@ -127,7 +127,23 @@ li:link, li:visited, li:active li:hover{
 }
 
 /* Estilo básico del contenedor */
-.dropdown {
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  .dropdown-wom {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  .dropdown-kastor {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -135,7 +151,18 @@ li:link, li:visited, li:active li:hover{
   }
   
   /* Botón del dropdown */
-  .dropdown-button {
+  .dropdown-button-wom {
+    width: 100%;
+    background-color: #9AAC76;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dropdown-button-kastor {
     width: 100%;
     background-color: #9AAC76;
     color: white;
@@ -147,7 +174,7 @@ li:link, li:visited, li:active li:hover{
   }
   
   /* Contenido del dropdown (oculto por defecto) */
-  .dropdown-content {
+  .dropdown-content-wom {
     display: none;
     position: absolute;
     background-color: #FAFAFA;
@@ -157,6 +184,28 @@ li:link, li:visited, li:active li:hover{
     border-radius: 24px;
     border: none;
     }
+
+.dropdown-content-kastor {
+        display: none;
+        position: absolute;
+        background-color: #FAFAFA;
+        min-width: 200px;
+        box-shadow: 0px 5px 20px rgba(184, 184, 126, 1);
+        z-index: 1;
+        border-radius: 24px;
+        border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FAFAFA;
+    min-width: 200px;
+    box-shadow: 0px 5px 20px rgba(184, 184, 126, 1);
+    z-index: 1;
+    border-radius: 24px;
+    border: none;
+}
   
   /* Mostrar el contenido al hacer hover en el dropdown */
     /*  .dropdown:hover .dropdown-content {
@@ -164,14 +213,32 @@ li:link, li:visited, li:active li:hover{
 
   }*/
 
-  .dropdown .dropdown-content {
+  .dropdown .dropdown-content-wom {
+    display: block;
+
+  }
+
+  .dropdown .dropdown-content-kastor {
     display: block;
 
   }
   
-  
+  .dropdown .dropdown-content {
+    display: block;
+
+  }
   /* Estilo adicional para los elementos dentro del dropdown */
   .dropdown-content p {
+    color: #1B0907;
+    cursor: pointer;
+  }
+  
+  .dropdown-content-wom p {
+    color: #1B0907;
+    cursor: pointer;
+  }
+
+  .dropdown-content-kastor p {
     color: #1B0907;
     cursor: pointer;
   }
@@ -264,14 +331,7 @@ padding: 0 10px 10px 10px;
 
   }
   
-  /* Needs to be included after the previous [popover]:popover-open
-     rule to take effect, as the specificity is the same */
-  @starting-style {
-    [popover]:popover-open {
-      opacity: 0;
-      transform: scaleX(0);
-    }
-  }
+
   
   /* Transition for the popover's backdrop */
   
@@ -280,7 +340,7 @@ padding: 0 10px 10px 10px;
     transition:
       display 0.7s allow-discrete,
       overlay 0.7s allow-discrete,
-      background-color 0.7s;
+      background-color 0.1s;
     /* Equivalent to
     transition: all 0.7s allow-discrete; */
   }
@@ -292,11 +352,13 @@ padding: 0 10px 10px 10px;
   /* Nesting selectors (&) cannot represent pseudo-elements, so this 
      starting-style rule cannot be nested. */
   
-  @starting-style {
-    [popover]:popover-open::backdrop {
-      background-color: rgb(0 0 0 / 0%);
-    }
-  }
 
-
+.cerrar {
+    width: 30px;
+    height: 30px;
+    background-color: #9AAC76;
+    color: #fafafa;
+    border-radius: 50px;
+    border: none;
+}
 
